@@ -1,5 +1,5 @@
 {% set name = "dynamo-release" %}
-{% set version = "1.3.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/aristoteleo/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4b9e0b9721802b0b7baa05a0651518958d512660703ca0d62a5140a7689f3d22
+  sha256: 5397c6f364bcef27a37db10b2e5057679c6c30e7894ebdd2add28c8e2d5445ab
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
